@@ -14,7 +14,6 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0px;
   padding: 0px;
-  min-width: 100%;
 }
 
 ul {
@@ -27,8 +26,8 @@ a {
 
 .global-header {
   display: flex;
-  width: 1600px;
-  height: 80px;
+  width: 100%;
+  height: 60px;
   border: 1px solid #ececec;
   align-items: center;
 }
@@ -36,21 +35,17 @@ a {
 .global-header .header-logo {
   display: flex;
   align-items: center;
-  margin-left: 215px;
+  padding-left: 15px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
 .global-header .main-navigation ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 259px;
-  margin-left: 93px;
+  display: none;
 }
 
 .global-header .main-navigation ul li {
-  position: relative;
+  display: none;
 }
 
 .web-logo {
@@ -96,7 +91,17 @@ a {
   fill: #757575;
   margin-bottom: -3px;
 }
-
+.mail-address {
+  color: var(--light-gray-text-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  align-items: center;
+  width: 135px;
+  margin-left: 376px;
+  padding: 16px 0;
+}
 .nav-link {
   font-size: 14px;
   font-weight: 500;
@@ -111,19 +116,26 @@ a {
 }
 
 .global-header ul {
-  display: flex;
+  display: none;
 }
 
-.mail-address {
-  color: var(--light-gray-text-color);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-  align-items: center;
-  width: 135px;
-  margin-left: 376px;
-  padding: 16px 0;
+.menu-button {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.menu-button svg {
+  width: 40px;
+  height: 40px;
+}
+
+.menu-button svg:hover {
+  fill: var(--background-hover-button-color);
+  transition: fill var(--transition), color var(--transition);
 }
 
 .global-header ul li a:hover svg,
@@ -164,6 +176,16 @@ a {
   width: 112px;
   margin-left: 40px;
   padding: 16px 0;
+}
+
+.social-mobile-links a{
+color: #2196F3;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 122.222% */
+letter-spacing: 0.36px;
 }
 
 .nav-link:hover,
@@ -545,7 +567,7 @@ a {
   flex-wrap: wrap;
   flex: 1 0 auto;
   justify-content: space-between;
-  flex-basis: calc((100% - 30px)/3);
+  flex-basis: calc((100% - 30px) / 3);
   max-width: 1200px;
 }
 
@@ -553,7 +575,7 @@ a {
   width: 75%;
   height: 1548px;
   border: 1px;
-gap: 30px;
+  gap: 30px;
 }
 
 .image {
@@ -1046,7 +1068,7 @@ textarea:focus + svg {
 .terms-and-conditions-check {
   width: 19px;
   margin-left: 12px;
-   accent-color: var(--background-hover-button-color)
+  accent-color: var(--background-hover-button-color);
 }
 
 .terms-and-conditions-check:not(:checked) {
@@ -1074,4 +1096,117 @@ input[type="checkbox"]:not(:checked) {
   box-shadow: 0px 4px 4px 0px #00000026;
   margin-left: calc(50% - 100px);
   cursor: pointer;
+}
+
+.menu-drawer-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.js-menu-container {
+  display: none;
+}
+
+.js-menu-container.is-open {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  width: 470px;
+  height: 796px;
+  padding: 48px 40px;
+  z-index: 1;
+}
+
+.js-menu-container .js-close-menu {
+  border: none;
+  background: none;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: 30px;
+}
+
+.js-menu-container .js-close-menu svg {
+  width: 40px;
+  height: 40px;
+}
+
+.js-menu-container .js-close-menu svg:hover {
+  fill: var(--background-hover-button-color);
+  transition: fill var(--transition), color var(--transition);
+}
+
+.menu-drawer-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .global-header .main-navigation ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 259px;
+    margin-left: 93px;
+  }
+
+  .global-header .header-logo {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  .global-header .main-navigation ul li {
+    display: flex;
+    position: relative;
+  }
+
+  .global-header ul {
+    display: flex;
+  }
+
+  .menu-button {
+    display: none;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1158px) {
+  .global-header {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    border: 1px solid #ececec;
+    align-items: center;
+  }
+
+  .global-header .header-logo {
+    display: flex;
+    align-items: center;
+    padding-left: 215px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  .global-header .main-navigation ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 259px;
+    margin-left: 93px;
+  }
+
+  .global-header .main-navigation ul li {
+    display: flex;
+    position: relative;
+  }
+
+  .global-header ul {
+    display: flex;
+  }
 }
