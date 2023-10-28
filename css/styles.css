@@ -18,6 +18,13 @@ body {
   height: 100%;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 ul {
   list-style-type: none;
 }
@@ -28,7 +35,7 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -38,6 +45,7 @@ img {
   height: 60px;
   border: 1px solid #ececec;
   align-items: center;
+  justify-content: space-between;
 }
 
 .global-header .header-logo {
@@ -46,18 +54,6 @@ img {
   padding-left: 15px;
   padding-top: 16px;
   padding-bottom: 16px;
-}
-
-.main-navigation {
-  display: flex;
-}
-
-.global-header .main-navigation .navigation {
-  display: none;
-}
-
-.global-header .main-navigation .navigation li {
-  display: none;
 }
 
 .web-logo {
@@ -78,12 +74,25 @@ img {
   letter-spacing: 0.78px;
 }
 
+.main-navigation {
+  display: flex;
+}
+
+.global-header .main-navigation .navigation {
+  display: none;
+}
+
+.global-header .main-navigation .navigation li {
+  display: none;
+}
+
 .current {
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
   padding: 16px 0;
+  color: rgba(33, 150, 243, 1);
 }
 
 .nav-link {
@@ -112,7 +121,7 @@ img {
   letter-spacing: 0.28px;
   align-items: center;
   width: 135px;
-  padding: 16px 0;
+  padding-top: 16px;
   padding-right: 15px;
 }
 
@@ -133,15 +142,10 @@ img {
   letter-spacing: 0.28px;
   align-items: center;
   width: 112px;
-  /* margin-left: 40px; */
   padding: 16px 0;
 }
 
-.navigation li a.current {
-  color: rgba(33, 150, 243, 1);
-}
-
-.global-header ul {
+.global-header .header-contacts {
   display: none;
 }
 
@@ -184,7 +188,7 @@ img {
   fill: #afb1b8;
   border-radius: 4px;
   border: 1px solid #afb1b8;
-  width: 188px;
+  width: 100%;
   height: 92px;
 }
 
@@ -291,6 +295,10 @@ img {
   padding: 0 15px;
 }
 
+.about-us-container ul li {
+  width: 100%;
+}
+
 .about-us {
   color: var(--dark-gray-text-color);
   font-size: 14px;
@@ -336,6 +344,7 @@ img {
   flex-shrink: 0;
   padding: 0 15px;
   gap: 30px;
+  justify-content: center;
 }
 
 .what-we-do-container ul li {
@@ -388,7 +397,12 @@ img {
   padding-bottom: 60px;
 }
 
+.our-team-section ul li picture {
+  width: 100%;
+}
+
 .our-team-section ul {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -397,6 +411,11 @@ img {
 }
 
 .our-team-section li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
   border-radius: 0px 0px 4px 4px;
   background: var(--button-hover-text-color);
   /* material shadow v1 */
@@ -425,6 +444,7 @@ img {
 }
 
 .social-media {
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -536,7 +556,7 @@ img {
 }
 
 .regular-customer-container ul li {
-  flex-basis: calc((100% -30px) / 3);
+  width: 45%;
 }
 
 .buttons {
@@ -1262,11 +1282,12 @@ input[type="checkbox"]:not(:checked) {
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-  .page {
-    width: 100%;
+ 
+ .page {
+  width: 100%;
     display: flex;
     flex-direction: column;
-  }
+}
 
   .global-header {
     display: flex;
@@ -1282,6 +1303,19 @@ input[type="checkbox"]:not(:checked) {
   .upper-studio-logo {
     font-size: 24px;
     letter-spacing: 0.72px;
+  }
+
+  .main-navigation {
+  }
+  .navigation {
+  }
+  .current {
+  }
+  .nav-link {
+  }
+  .phone-number {
+  }
+  .mail-address {
   }
 
   .icon-envelope {
@@ -1320,33 +1354,35 @@ input[type="checkbox"]:not(:checked) {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* margin-left: 93px; */
   }
 
   .global-header .header-logo {
     padding-top: 26px;
     padding-bottom: 26px;
-    padding-right: 20px;
   }
 
   .global-header .main-navigation .navigation li {
     display: flex;
     position: relative;
-    margin-right: 50px;
+    margin-left: 50px;
   }
 
   .global-header .header-contacts {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    margin-left: 59px;
+    padding-right: 15px;
+    
   }
 
-  /* .global-header ul {
+  .global-header ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-     } */
+  }
 
   .menu-button {
     display: none;
@@ -1376,8 +1412,6 @@ input[type="checkbox"]:not(:checked) {
     line-height: 1.36364;
     letter-spacing: 2.64px;
     text-transform: uppercase;
-    /* margin: auto; */
-    /* padding: 200px 452px 30px; */
   }
 
   .about-us {
@@ -1407,7 +1441,8 @@ input[type="checkbox"]:not(:checked) {
   }
 
   .our-team-section li {
-    margin: 0 2px;
+   width: 47%;
+   margin: 0 2px;
   }
 
   .regular-customer-container {
@@ -1417,6 +1452,10 @@ input[type="checkbox"]:not(:checked) {
     height: 100%;
     padding-bottom: 94px;
   }
+
+  .regular-customer-container ul li {
+  width: 30%;
+}
 
   .regular-customer-section ul {
     display: flex;
@@ -1430,7 +1469,7 @@ input[type="checkbox"]:not(:checked) {
     fill: #afb1b8;
     border-radius: 4px;
     border: 1px solid #afb1b8;
-    width: 226px;
+    width: 100%;
     height: 92px;
   }
 
@@ -1442,6 +1481,10 @@ input[type="checkbox"]:not(:checked) {
     width: 100%;
     flex-shrink: 0;
     gap: 30px;
+  }
+
+  .about-us-container ul li {
+    width: 47%;
   }
 
   .about-us-text {
@@ -1459,7 +1502,6 @@ input[type="checkbox"]:not(:checked) {
     width: 206px;
     height: 44px;
     margin-bottom: 32px;
-    margin-left: 74px;
   }
 
   .social-bottom {
@@ -1474,8 +1516,8 @@ input[type="checkbox"]:not(:checked) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 464px;
     flex-shrink: 0;
@@ -1489,8 +1531,13 @@ input[type="checkbox"]:not(:checked) {
     margin-bottom: 20px;
   }
 
+.contact-section {
+  display: flex;
+}
+
   .bottom-logo {
     margin-top: 60px;
+  margin-left: 0;
   }
 
   .bottom p {
@@ -1516,7 +1563,7 @@ input[type="checkbox"]:not(:checked) {
     flex-direction: row;
     flex-wrap: wrap;
     /* flex: 1 0 auto; */
-    justify-content: flex-start;
+    justify-content: center;
     gap: 30px;
     padding-left: 15px;
   }
@@ -1534,33 +1581,37 @@ input[type="checkbox"]:not(:checked) {
 /* Desktop */
 @media screen and (min-width: 1158px) {
   .page {
-    width: 100%;
+    width: 75%;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .global-header {
     width: 100%;
     height: 80px;
-    justify-content: space-evenly;
+    justify-content: center;
+  }
+
+  .global-header .header-logo {
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 0;
   }
 
   .web-logo {
-    color: var(--background-hover-button-color);
-    font-family: Raleway;
     font-size: 26px;
-    font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.78px;
   }
 
   .upper-studio-logo {
-    color: #000;
-    font-family: Raleway;
     font-size: 26px;
-    font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.78px;
+  }
+
+  .main-navigation {
+  }
+  .navigation {
   }
 
   .current {
@@ -1591,14 +1642,14 @@ input[type="checkbox"]:not(:checked) {
 
   .mail-address {
     color: var(--light-gray-text-color);
-    font-size: 100%;
+    font-size: 14px;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
     align-items: center;
     width: 135px;
     padding: 16px 0;
-    padding-right: 15px;
+    margin-left: 240px;
   }
 
   .icon-smartphone {
@@ -1618,7 +1669,7 @@ input[type="checkbox"]:not(:checked) {
     letter-spacing: 0.28px;
     align-items: center;
     width: 112px;
-    /* margin-left: 40px; */
+    margin-left: 40px;
     padding: 16px 0;
   }
 
@@ -1626,9 +1677,11 @@ input[type="checkbox"]:not(:checked) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 259px;
-    margin-left: 93px;
+    width: 100%;
+    margin-left: 43px;
     flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .global-header .main-navigation .navigation li {
@@ -1639,6 +1692,8 @@ input[type="checkbox"]:not(:checked) {
   .global-header .header-contacts {
     display: flex;
     flex-direction: row;
+    padding-left: 0;
+    margin-left: 0;
   }
 
   .business-solutions-section {
@@ -1646,7 +1701,6 @@ input[type="checkbox"]:not(:checked) {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-
     flex-shrink: 0;
     background: #2f303a;
     background-image: linear-gradient(
@@ -1672,11 +1726,12 @@ input[type="checkbox"]:not(:checked) {
   }
 
   .about-us-container {
-    padding: 94px 215px;
+    width: 100%;
+    padding-bottom: 94px;
   }
 
   .about-us-icon {
-    width: 270px;
+    width: 100%;
   }
 
   .about-us-text {
@@ -1685,7 +1740,7 @@ input[type="checkbox"]:not(:checked) {
     font-size: 14px;
     line-height: 1.71429;
     letter-spacing: 0.42px;
-    width: 270px;
+    width: 100%;
     height: 75px;
     flex-shrink: 0;
   }
@@ -1695,9 +1750,16 @@ input[type="checkbox"]:not(:checked) {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 0 205px;
+    padding-bottom: 94px;
     background: var(--button-hover-text-color);
-    padding: 0 215px 94px;
+  }
+
+  .what-we-do-contain {
+    width: 100%;
+  }
+
+  .what-we-do-contain ul li {
+    width: 35%;
   }
 
   .our-team-section h2 {
@@ -1713,18 +1775,22 @@ input[type="checkbox"]:not(:checked) {
     gap: 30px;
   }
 
+  .about-us-container ul li {
+    width: 100%;
+  }
+
   .our-team-section h2 {
     font-size: 36px;
   }
 
-  .our-team-section {
-  }
+  /* .our-team-section {
+  } */
 
   .our-team-section ul {
+    width: 75%;
     display: flex;
     flex-direction: row;
     gap: 30px;
-    padding: 0 215px;
     flex-wrap: nowrap;
   }
 
@@ -1735,8 +1801,12 @@ input[type="checkbox"]:not(:checked) {
     width: 206px;
     height: 44px;
     margin-bottom: 32px;
-    margin-left: 30px;
   }
+
+.regular-customer-section {
+  width: 100%;
+}
+
 
   .regular-customer-section h2 {
     font-size: 36px;
@@ -1744,13 +1814,14 @@ input[type="checkbox"]:not(:checked) {
 
   .regular-customer-section ul {
     flex-wrap: nowrap;
+    width: 100%;
   }
 
   .client-icon {
     fill: #afb1b8;
     border-radius: 4px;
     border: 1px solid #afb1b8;
-    width: 170px;
+    width: 100%;
     height: 92px;
   }
 
@@ -1764,6 +1835,7 @@ input[type="checkbox"]:not(:checked) {
 
   .bottom {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: unset;
     width: 100%;
@@ -1786,14 +1858,13 @@ input[type="checkbox"]:not(:checked) {
     width: 100%;
     height: 100%;
     flex-shrink: 0;
-    /* margin-top: 20px; */
-    margin-left: 12px;
-    position: relative;
+    
+      position: relative;
     border-radius: 4px;
   }
 
   .bottom p {
-    /* margin-left: 215px; */
+    text-align: left;
   }
 
   .footer-newsleter-subscriber {
@@ -1844,5 +1915,9 @@ input[type="checkbox"]:not(:checked) {
 
   .work-cards {
     justify-content: center;
+  }
+
+  .our-work-section {
+    width: 75%;
   }
 }
