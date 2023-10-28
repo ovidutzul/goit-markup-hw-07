@@ -1711,6 +1711,15 @@ input[type="checkbox"]:not(:checked) {
     background-size: 100%;
   }
 
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2ddpx) {
+    .business-solutions-section {
+      background-image: url("../images/business-solution-background-d-2x.jpg");
+    }
+  }
+
   .business-solution {
     display: flex;
     flex-direction: column;
