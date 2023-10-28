@@ -1126,8 +1126,9 @@ input[type="checkbox"]:not(:checked) {
 }
 
 .menu-drawer-navigation {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+ flex-direction: column;
 }
 
 .menu-drawer-navigation ul {
@@ -1140,7 +1141,7 @@ input[type="checkbox"]:not(:checked) {
 }
 
 .menu-drawer-navigation ul:last-child {
-  margin-bottom: 306px;
+  margin-bottom: 206px;
 }
 
 .menu-drawer-navigation-link {
