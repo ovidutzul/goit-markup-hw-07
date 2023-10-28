@@ -256,8 +256,6 @@ img {
   line-height: 1.61538;
   letter-spacing: 1.56px;
   text-transform: uppercase;
-  /* margin: auto; */
-  /* padding-top: 118px; */
 }
 
 .order-service {
@@ -288,7 +286,6 @@ img {
 
 .about-us-section {
   width: 100%;
-  /* padding-bottom: 60px; */
 }
 
 .about-us-container {
@@ -608,7 +605,6 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* flex: 1 0 auto; */
   justify-content: space-around;
   gap: 30px;
   padding: unset;
@@ -635,7 +631,6 @@ img {
   height: 404px;
   flex-shrink: 0;
   background: var(--button-hover-text-color);
-  /* margin-top: 25px; */
   cursor: pointer;
 }
 
@@ -828,7 +823,6 @@ img {
   flex-direction: column;
   justify-content: stretch;
   width: 100%;
-  /* height: 50px; */
   flex-shrink: 0;
   position: relative;
   border-radius: 4px;
@@ -1077,8 +1071,6 @@ textarea:focus + svg {
   font-weight: 400;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
-  /* padding-left: 25px; */
-  /* margin-left: -25px; */
   cursor: pointer;
 }
 
@@ -1103,7 +1095,6 @@ textarea:focus + svg {
 
 .terms-and-conditions-check {
   width: 19px;
-  /* margin-left: 12px; */
   accent-color: var(--background-hover-button-color);
 }
 
@@ -1194,6 +1185,7 @@ input[type="checkbox"]:not(:checked) {
 .menu-drawer-navigation-mail-adress:hover,
 .menu-drawer-navigation-phone-number:active,
 .menu-drawer-navigation-mail-adress:active {
+  color: var(--background-hover-button-color);
 }
 
 .social-mobile-links {
@@ -1314,19 +1306,6 @@ input[type="checkbox"]:not(:checked) {
     letter-spacing: 0.72px;
   }
 
-  .main-navigation {
-  }
-  .navigation {
-  }
-  .current {
-  }
-  .nav-link {
-  }
-  .phone-number {
-  }
-  .mail-address {
-  }
-
   .icon-envelope {
     width: 14px;
     height: 10.003px;
@@ -1383,8 +1362,7 @@ input[type="checkbox"]:not(:checked) {
     align-items: flex-start;
     margin-left: 59px;
     padding-right: 10px;
-    
-  }
+    }
 
   .global-header ul {
     display: flex;
@@ -1441,13 +1419,11 @@ input[type="checkbox"]:not(:checked) {
     flex-direction: column;
     align-items: center;
     padding-bottom: 94px;
-    /* padding: 0 15px; */
-  }
+   }
 
   .about-us-container {
     padding: 60px 0;
-    /* margin-left: -40px; */
-  }
+   }
 
   .our-team-section ul {
     display: flex;
@@ -1562,10 +1538,7 @@ input[type="checkbox"]:not(:checked) {
     text-align: center;
   }
 
-  .footer-newsleter-subscriber {
-  }
-
-  .footer-email-input-box {
+   .footer-email-input-box {
     width: 120%;
   }
 
@@ -1580,19 +1553,16 @@ input[type="checkbox"]:not(:checked) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* flex: 1 0 auto; */
-    justify-content: center;
+       justify-content: center;
     gap: 30px;
-    padding-left: 15px;
-  }
+    }
 
   .our-work-section .work-cards li {
     width: 354px;
     height: 404px;
     flex-shrink: 0;
     background: var(--button-hover-text-color);
-    /* margin-top: 25px; */
-    cursor: pointer;
+     cursor: pointer;
   }
 }
 
@@ -1626,12 +1596,7 @@ input[type="checkbox"]:not(:checked) {
     font-size: 26px;
     letter-spacing: 0.78px;
   }
-
-  .main-navigation {
-  }
-  .navigation {
-  }
-
+ 
   .current {
     font-size: 14px;
     font-weight: 500;
@@ -1748,9 +1713,7 @@ input[type="checkbox"]:not(:checked) {
     line-height: 1.36364;
     letter-spacing: 2.64px;
     text-transform: uppercase;
-    /* margin: auto; */
-    /* padding: 200px 452px 30px; */
-  }
+    }
 
   .about-us-container {
     width: 100%;
@@ -1809,9 +1772,6 @@ input[type="checkbox"]:not(:checked) {
   .our-team-section h2 {
     font-size: 36px;
   }
-
-  /* .our-team-section {
-  } */
 
   .our-team-section ul {
     width: 75%;
@@ -1885,8 +1845,7 @@ input[type="checkbox"]:not(:checked) {
     width: 100%;
     height: 100%;
     flex-shrink: 0;
-    
-      position: relative;
+    position: relative;
     border-radius: 4px;
   }
 
@@ -1924,10 +1883,11 @@ input[type="checkbox"]:not(:checked) {
 
   .buttons {
     padding-top: 94px;
+    padding-left: 0;
   }
 
   .our-work-section .work-cards li {
-    width: 354px;
+    width: 31%;
   }
 
   .our-work-section .work-cards ul {
@@ -1936,15 +1896,18 @@ input[type="checkbox"]:not(:checked) {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    padding-left: 15px;
-    /* flex-basis: calc((100% - 30px) / 3); */
-  }
+    }
 
   .work-cards {
     justify-content: center;
   }
 
   .our-work-section {
-    width: 75%;
+    width: 100%;
+  }
+
+  .box1 {
+    width: 100%;
+    height: 65%;
   }
 }
