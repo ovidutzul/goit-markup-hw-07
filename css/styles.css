@@ -235,6 +235,15 @@ img {
   background-size: cover;
 }
 
+ @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2ddpx) {
+    .business-solutions-section {
+      background-image: url("../images/business-solution-background-m-2x.jpg");
+    }
+  }
+
 .business-solution {
   display: flex;
   flex-direction: column;
@@ -1402,6 +1411,15 @@ input[type="checkbox"]:not(:checked) {
       ),
       url("../images/business-solution-background-t.jpg");
     background-size: 100%;
+  }
+
+   @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2ddpx) {
+    .business-solutions-section {
+      background-image: url("../images/business-solution-background-t-2x.jpg");
+    }
   }
 
   .business-solution {
