@@ -19,10 +19,9 @@ body {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 ul {
@@ -235,14 +234,14 @@ img {
   background-size: cover;
 }
 
- @media (min-device-pixel-ratio: 2),
+@media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2ddpx) {
-    .business-solutions-section {
-      background-image: url("../images/business-solution-background-m-2x.jpg");
-    }
+  .business-solutions-section {
+    background-image: url("../images/business-solution-background-m-2x.jpg");
   }
+}
 
 .business-solution {
   display: flex;
@@ -1001,7 +1000,7 @@ textarea::placeholder {
 }
 
 textarea {
-  width: 100%%;
+  width: 100%;
   height: 120px;
   flex-shrink: 0;
   padding: 12px 16px;
@@ -1128,7 +1127,7 @@ input[type="checkbox"]:not(:checked) {
 .menu-drawer-navigation {
   width: 100%;
   display: flex;
- flex-direction: column;
+  flex-direction: column;
 }
 
 .menu-drawer-navigation ul {
@@ -1213,7 +1212,6 @@ input[type="checkbox"]:not(:checked) {
   width: 3px;
   height: 22px;
   background: rgba(33, 33, 33, 0.2);
-   
 }
 
 .js-menu-container {
@@ -1281,12 +1279,11 @@ input[type="checkbox"]:not(:checked) {
 
 /* Tablet */
 @media screen and (min-width: 768px) {
- 
- .page {
-  width: 100%;
+  .page {
+    width: 100%;
     display: flex;
     flex-direction: column;
-}
+  }
 
   .global-header {
     display: flex;
@@ -1315,7 +1312,7 @@ input[type="checkbox"]:not(:checked) {
     font-size: 12px;
     letter-spacing: 0.24px;
     padding-top: 16px;
-    padding-right: 15px;
+    padding-right: 10px;
   }
 
   .icon-smartphone {
@@ -1329,7 +1326,7 @@ input[type="checkbox"]:not(:checked) {
   .phone-number {
     font-size: 12px;
     letter-spacing: 0.24px;
-    padding-: 16px;
+    padding-bottom: 16px;
   }
 
   .global-header .main-navigation .navigation {
@@ -1356,8 +1353,7 @@ input[type="checkbox"]:not(:checked) {
     justify-content: center;
     align-items: flex-start;
     margin-left: 59px;
-    padding-right: 10px;
-    }
+  }
 
   .global-header ul {
     display: flex;
@@ -1386,10 +1382,10 @@ input[type="checkbox"]:not(:checked) {
     background-size: 100%;
   }
 
-   @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2ddpx) {
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2ddpx) {
     .business-solutions-section {
       background-image: url("../images/business-solution-background-t-2x.jpg");
     }
@@ -1413,11 +1409,11 @@ input[type="checkbox"]:not(:checked) {
     display: flex;
     flex-direction: column;
     align-items: center;
-      }
+  }
 
   .about-us-container {
     padding: 60px 0;
-   }
+  }
 
   .our-team-section ul {
     display: flex;
@@ -1429,8 +1425,8 @@ input[type="checkbox"]:not(:checked) {
   }
 
   .our-team-section li {
-   width: 47%;
-   margin: 0 2px;
+    width: 47%;
+    margin: 0 2px;
   }
 
   .regular-customer-container {
@@ -1442,8 +1438,8 @@ input[type="checkbox"]:not(:checked) {
   }
 
   .regular-customer-container ul li {
-  width: 30%;
-}
+    width: 30%;
+  }
 
   .regular-customer-section ul {
     display: flex;
@@ -1479,8 +1475,8 @@ input[type="checkbox"]:not(:checked) {
     width: 354px;
   }
 
-.modal-content {
-  width: 58.6%;
+  .modal-content {
+    width: 58.6%;
   }
 
   /* .icon-close {
@@ -1523,20 +1519,20 @@ input[type="checkbox"]:not(:checked) {
     margin-bottom: 20px;
   }
 
-.contact-section {
-  display: flex;
-}
+  .contact-section {
+    display: flex;
+  }
 
   .bottom-logo {
     margin-top: 60px;
-  margin-left: 0;
+    margin-left: 0;
   }
 
   .bottom p {
     text-align: center;
   }
 
-   .footer-email-input-box {
+  .footer-email-input-box {
     width: 120%;
   }
 
@@ -1551,16 +1547,16 @@ input[type="checkbox"]:not(:checked) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-       justify-content: center;
+    justify-content: center;
     gap: 30px;
-    }
+  }
 
   .our-work-section .work-cards li {
     width: 354px;
     height: 404px;
     flex-shrink: 0;
     background: var(--button-hover-text-color);
-     cursor: pointer;
+    cursor: pointer;
   }
 }
 
@@ -1594,7 +1590,7 @@ input[type="checkbox"]:not(:checked) {
     font-size: 26px;
     letter-spacing: 0.78px;
   }
- 
+
   .current {
     font-size: 14px;
     font-weight: 500;
@@ -1639,10 +1635,9 @@ input[type="checkbox"]:not(:checked) {
   }
 
   .phone-number {
-
     font-size: 14px;
-     letter-spacing: 0.28px;
-     margin-left: 40px;
+    letter-spacing: 0.28px;
+    margin-left: 40px;
     padding: 16px 0;
   }
 
@@ -1685,9 +1680,9 @@ input[type="checkbox"]:not(:checked) {
   }
 
   @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2ddpx) {
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2ddpx) {
     .business-solutions-section {
       background-image: url("../images/business-solution-background-d-2x.jpg");
     }
@@ -1703,11 +1698,11 @@ input[type="checkbox"]:not(:checked) {
     line-height: 1.36364;
     letter-spacing: 2.64px;
     text-transform: uppercase;
-    }
+  }
 
-.about-us-section {
-  padding-bottom: 34px;
-}
+  .about-us-section {
+    padding-bottom: 34px;
+  }
 
   .about-us-container {
     width: 100%;
@@ -1784,10 +1779,9 @@ input[type="checkbox"]:not(:checked) {
     margin-bottom: 32px;
   }
 
-.regular-customer-section {
-  width: 100%;
-}
-
+  .regular-customer-section {
+    width: 100%;
+  }
 
   .regular-customer-section h2 {
     font-size: 36px;
@@ -1886,7 +1880,7 @@ input[type="checkbox"]:not(:checked) {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    }
+  }
 
   .work-cards {
     justify-content: center;
